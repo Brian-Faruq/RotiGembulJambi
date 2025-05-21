@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roti Gembul Jambi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-warning">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="kau.png" alt="Logo" />
+        <span class="fw-bold" style="font-family: 'Comic Sans MS', cursive, sans-serif; color: #834622;">Roti Gembul</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-5">
+          <li class="nav-item">
+            <a class="nav-link active" href="#gambar">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tentang">Tentang Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Slider Gambar -->
+  <div id="gambar" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#gambar" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#gambar" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#gambar" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="kamu.jpeg" class="d-block w-100"
+          alt="Gambar 1" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Roti Gembul Jambi</h5>
+          <p>Lezat dan Lembut di Setiap Gigitan</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="dia.png" class="d-block w-100" alt="Gambar 2" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Kualitas Terbaik</h5>
+          <p>Resep Asli dengan Bahan Pilihan</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="aku.jpg" class="d-block w-100" alt="Gambar 3" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Variasi Rasa</h5>
+          <p>Nikmati Beragam Roti Favorit</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#gambar" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#gambar" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Tentang Kami -->
+  <div id="tentang"class="bg-warning py-5 border">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4" style="font-family: 'Comic Sans MS', cursive, sans-serif; color: #834622;">Tentang
+        Kami</h2>
+      <div class="row justify-content-center align-items-center">
+        <!-- Kolom Logo -->
+        <div class="col-md-4 mb-3">
+          <img src="kau.png" alt="Logo Roti Gembul"
+            class="img-fluid rounded-circle shadow-lg" style="max-width: 250px;" />
+        </div>
+        <!-- Kolom Paragraf -->
+        <div class="col-md-6">
+          <div class="p-4 bg-white rounded-3 shadow-sm">
+            <p class="fs-5 mb-0">
+              Roti Gembul Jambi adalah toko roti yang menyediakan berbagai macam roti dengan kualitas terbaik. Roti kami
+              dibuat dengan resep asli dan bahan-bahan pilihan. Selamat datang di Roti Gembul Jambi!
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu (Scrollable Cards) -->
+  <div id="menu"class="container my-5 menu-wrapper">
+    <h2 class="fw-bold text-center mb-4"
+      style="font-family: 'Comic Sans MS', cursive, sans-serif; color: #834622;">Menu</h2>
+    <p class="fw-bold text-center mb-4">Kami memiliki banyak sekali menu yang enak</p>
+
+    <!-- Input Pencarian -->
+    <div class="text-center mb-3">
+      <input type="search" id="searchInput" class="form-control" placeholder="Cari menu..."
+        aria-label="Cari menu" onkeyup="searchMenu()" style="max-width: 300px; margin: auto;">
+    </div>
+
+    <div class="scroll-menu" role="list" aria-live="polite" aria-atomic="true" aria-relevant="all">
+      <!-- Example Cards -->
+      <div class="card" role="listitem">
+        <img src="aku.jpg" class="card-img-top" alt="Menu 1" />
+        <div class="card-body">
+          <h5 class="card-title">Roti Coklat</h5>
+          <p class="card-text">Lembut dan lezat.</p>
+        </div>
+      </div>
+      <div class="card" role="listitem">
+        <img src="aku.jpg" class="card-img-top" alt="Menu 2" />
+        <div class="card-body">
+          <h5 class="card-title">Roti Keju</h5>
+          <p class="card-text">Gurih dan nikmat.</p>
+        </div>
+      </div>
+      <div class="card" role="listitem">
+        <img src="aku.jpg" class="card-img-top" alt="Menu 3" />
+        <div class="card-body">
+          <h5 class="card-title">Roti Pisang</h5>
+          <p class="card-text">Manis dan lembut.</p>
+        </div>
+      </div>
+      <div class="card" role="listitem">
+        <img src="aku.jpg" class="card-img-top" alt="Menu 4" />
+        <div class="card-body">
+          <h5 class="card-title">Roti Srikaya</h5>
+          <p class="card-text">Aroma khas dan lezat.</p>
+        </div>
+      </div>
+      <div class="card" role="listitem">
+        <img src="aku.jpg" class="card-img-top" alt="Menu 5" />
+        <div class="card-body">
+          <h5 class="card-title">Roti Gandum</h5>
+          <p class="card-text">Sehat dan bergizi.</p>
+        </div>
+      </div>
+      <div class="card" role="listitem">
+        <img src="aku.jpg" class="card-img-top" alt="Menu 6" />
+        <div class="card-body">
+          <h5 class="card-title">Roti Kacang</h5>
+          <p class="card-text">Kriuk dan lezat.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script Pencarian -->
+  <script>
+    function searchMenu() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const cards = document.querySelectorAll(".card");
+
+      cards.forEach(card => {
+        const title = card.querySelector(".card-title").textContent.toLowerCase();
+        if (title.includes(input)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    }
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <div id="kontak"class="bg-warning text-dark py-4">
+      <div class="container d-flex justify-content-center align-items-start gap-5 flex-wrap">
+        <!-- Kontak -->
+        <div class="footer-box">
+          <h5 class="fw-bold mb-3 header-footer" style="font-family: 'Comic Sans MS', cursive, sans-serif;">Kontak Kami</h5>
+          <p class="mb-1">Roti Gembul Jambi</p>
+          <p class="mb-1">Jl. Roti No. 123, Jambi</p>
+          <p class="mb-1">Telp: (0741) 123456</p>
+          <p class="mb-0">
+            Email:
+            <a href="mailto:info@rotigembuljambi.com" class="text-dark text-decoration-none">info@rotigembuljambi.com</a>
+          </p>
+        </div>
+
+        <!-- Sosial Media -->
+        <div class="footer-box">
+          <h5 class="fw-bold mb-3 header-footer" style="font-family: 'Comic Sans MS', cursive, sans-serif;">Sosial Media</h5>
+          <div class="d-flex flex-column gap-2">
+            <a href="#" class="text-dark d-flex align-items-center gap-2 text-decoration-none">
+              <i class="bi bi-instagram fs-4"></i> <span>Instagram</span>
+            </a>
+            <a href="#" class="text-dark d-flex align-items-center gap-2 text-decoration-none">
+              <i class="bi bi-facebook fs-4"></i> <span>Facebook</span>
+            </a>
+            <a href="#" class="text-dark d-flex align-items-center gap-2 text-decoration-none">
+              <i class="bi bi-twitter fs-4"></i> <span>Twitter</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center py-3" style="background-color: #4d4d4d; font-family: Arial, sans-serif; color: #ffffff;">
+      &copy; 2025 Roti Gembul Jambi. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Tombol Pesan Sekarang -->
+<a href="https://wa.me/6281234567890" target="_blank" class="whatsapp-button">
+  <i class="bi bi-whatsapp"></i> Pesan Sekarang
+</a>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.js"></script>
+</body>
+
+</html>
